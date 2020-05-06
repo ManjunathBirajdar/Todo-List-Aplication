@@ -1,0 +1,57 @@
+#main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+}
+
+#header {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-content: center;
+}
+#title {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+#add-note {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+#add-input {
+    flex-basis: 30%;
+    height: 30px;
+}
+#h1 {
+    font-size: 50px;
+}
+
+#add-button {
+    font-size: 20px;
+}
+
+#display-notes {
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    list-style-type: none;
+    font-size: 25px;
+    margin: 0px;
+    padding: 0;
+    flex-basis: 40%;
+}
+
+input.cross-note ~ span{
+    text-decoration: line-through;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo</title>
+    <script src="todo.js"></script>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <div id="title">Todo App</div>
+      </div>
+
+      <br /><br />
+
+      <div id="add-note" style="text-align: center;">
+        <input
+          required
+          type="text"
+          name="add-input"
+          id="add-input"
+          maxlength="75"
+          placeholder="Enter the note"
+        />
+        <button id="add-button">Add</button>
+      </div>
+      <br /><br />
+      <div id="display-notes">
+        <div>
+          <ul id="list" class="list"></ul>
+        </div>
+      </div>
+    </div>
+    <template id="template">
+      <li>
+        <input type="checkbox" />
+        <span></span>
+      </li>
+    </template>
+  </body>
+</html>
